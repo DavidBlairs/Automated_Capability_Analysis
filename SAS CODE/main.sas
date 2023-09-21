@@ -1,10 +1,10 @@
 * Program for generating Capability Analysis Reports; 
 
-%LET stem = C:\Users\david.blair\OneDrive - Unilever\Documents\Files\Recreational Projects\Capability Analysis Generator; 
-%LET Image_Loc = C:\\Users\\david.blair\\OneDrive - Unilever\\Documents\\Files\\Recreational Projects\\Capability Analysis Generator\\OUTPUT;
+%LET stem = Capability Analysis Generator; 
+%LET Image_Loc = OUTPUT;
 
 LIBNAME data "&stem.\SAS DATA";
-%INCLUDE "C:\Users\david.blair\OneDrive - Unilever\Documents\Files\Recreational Projects\Capability Analysis Generator\SAS CODE\capability.sas";
+%INCLUDE "capability.sas";
 
 PROC IMPORT DATAFILE = "&stem.\RAW DATA\encoding.csv"
 			OUT      = DATA.Encodings
